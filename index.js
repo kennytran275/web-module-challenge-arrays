@@ -45,13 +45,12 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(array){
+function copy(array) {
     let arrayCopy = [...array];
     return arrayCopy;
 }    
 
 let arrayCopy = copy(originalFlavors);
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
@@ -63,10 +62,15 @@ Confirm that an array is exactly 31 flavors. Your function should accept:
 For Example: is31Flavors(originalFlavors) will return true if your code is working properly
 */
 
-
-function is31Flavors(/*your code here*/){
-   /*your code here*/
+function is31Flavors(array) {
+   if (array.length === 31) {
+     return true;
+   } else {
+       return false;
+   }
 }
+
+is31Flavors(originalFlavors);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
